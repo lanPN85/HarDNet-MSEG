@@ -203,11 +203,11 @@ def hardnet(arch=68,pretrained=True, **kwargs):
             weights = torch.load('/home/james128333/PraNet/lib/hardnet68.pth')
             model.load_state_dict(weights)
             print("68 LOADED READY")
-    elif arch == 85:
-        print("85 LOADED")
-        model = HarDNet(arch=85)
-        if pretrained:
-            print("HAAAHAAA")
-            weights = torch.load('/home/james128333/PraNet/lib/hardnet85.pth')
-            model.load_state_dict(weights)
+    #elif arch == 85:
+    #    print("85 LOADED")
+    #    model = HarDNet(arch=85)
+    #    if pretrained:
+    #        print("HAAAHAAA")
+    #        weights = torch.load('/home/james128333/PraNet/lib/hardnet85.pth')
+    #        model.load_state_dict(weights)
     return model
