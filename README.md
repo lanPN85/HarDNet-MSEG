@@ -19,13 +19,19 @@
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing).
    
 3. Training :
+
+    First download pretrain_weight : hardnet68.pth for HarDNet68 in https://github.com/PingoLH/Pytorch-HarDNet
     
-    Just simply change the --train_path & --test_path in Train.py
-    And just run the Train.py
+    And change the weight path in lib/hardnet_68.py line 203
+    
+    Then Just simply change the --train_path & --test_path in Train.py
+    
+    Final step is to run the Train.py
 
 4. Testing & inference result :
 
     Just simply change the data_path in Test.py (line 16)
+    
     And you can get the inference results in results/
     
 
