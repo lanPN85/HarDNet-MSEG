@@ -208,6 +208,6 @@ def hardnet(arch=68,pretrained=True, **kwargs):
     #    model = HarDNet(arch=85)
     #    if pretrained:
     #        print("HAAAHAAA")
-    #        weights = torch.load('/home/james128333/PraNet/lib/hardnet85.pth')
+    #        weights = torch.load('/home/james128333/HarDNet-MSEG/lib/hardnet85.pth')
     #        model.load_state_dict(weights)
     return model
