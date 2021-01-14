@@ -46,7 +46,7 @@ if __name__ == '__main__':
         ##### image_root : your model inference results' path   ###
         ##### gt_root : gt files' path                          ###
         ###########################################################
-        image_root = '/home/james128333/PraNet/results/PraNet-H85/Kvasir/'
+        image_root = '/home/james128333/HarDNet-MSEG/results/HarDMSEG/Kvasir/'
         gt_root = '/work/james128333/PraNet/TestDataset/Kvasir/masks/'
     
         test_loader = test_dataset(image_root, gt_root)
