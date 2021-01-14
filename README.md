@@ -1,89 +1,7 @@
 # HarDNet-MSEG: An Efficient Network for Polyp Segmentation
 
-## 1. Preface
 
-- This repository provides code for "_**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**_" MICCAI-2020. 
-([paper](https://link.springer.com/chapter/10.1007%2F978-3-030-59725-2_26))
-
-- If you have any questions about our paper, feel free to contact me. And if you are using PraNet 
-or evaluation toolbox for your research, please cite this paper ([BibTeX](#4-citation)).
-
-
-### 1.1. :fire: NEWS :fire:
-- [2020/09/18] :boom: Upload the pre-computed maps.
-
-- [2020/05/28] :boom: Upload pre-trained weights. (Updated by Ge-Peng Ji)
-
-- [2020/06/24] :boom: Release training/testing code. (Updated by Ge-Peng Ji)
-
-- [2020/03/24] Create repository.
-
-
-### 1.2. Table of Contents
-
-- [PraNet: Parallel Reverse Attention Network for Polyp Segmentation (MICCAI 2020)](#pranet--parallel-reverse-attention-network-for-polyp-segmentation--miccai-2020-)
-  * [1. Preface](#1-preface)
-    + [1.1. :fire: NEWS :fire:](#11--fire--news--fire-)
-    + [1.2. Table of Contents](#12-table-of-contents)
-  * [2. Overview](#2-overview)
-    + [2.1. Introduction](#21-introduction)
-    + [2.2. Framework Overview](#22-framework-overview)
-    + [2.3. Qualitative Results](#23-qualitative-results)
-  * [3. Proposed Baseline](#3-proposed-baseline)
-    + [3.1 Training/Testing](#31-training-testing)
-    + [3.2 Evaluating your trained model:](#32-evaluating-your-trained-model-)
-    + [3.3 Pre-computed maps:](#33-pre-computed-maps)
-  * [4. Citation](#4-citation)
-  * [5. TODO LIST](#5-todo-list)
-  * [6. FAQ](#6-faq)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-  
-
-## 2. Overview
-
-### 2.1. Introduction
-
-Colonoscopy is an effective technique for detecting colorectal polyps, which are highly related to colorectal cancer. 
-In clinical practice, segmenting polyps from colonoscopy images is of great importance since it provides valuable 
-information for diagnosis and surgery. However, accurate polyp segmentation is a challenging task, for two major reasons:
-(i) the same type of polyps has a diversity of size, color and texture; and
-(ii) the boundary between a polyp and its surrounding mucosa is not sharp. 
-
-To address these challenges, we propose a parallel reverse attention network (PraNet) for accurate polyp segmentation in colonoscopy
-images. Specifically, we first aggregate the features in high-level layers using a parallel partial decoder (PPD). 
-Based on the combined feature, we then generate a global map as the initial guidance area for the following components. 
-In addition, we mine the boundary cues using a reverse attention (RA) module, which is able to establish the relationship between
-areas and boundary cues. Thanks to the recurrent cooperation mechanism between areas and boundaries, 
-our PraNet is capable of calibrating any misaligned predictions, improving the segmentation accuracy. 
-
-Quantitative and qualitative evaluations on five challenging datasets across six
-metrics show that our PraNet improves the segmentation accuracy significantly, and presents a number of advantages in terms of generalizability,
-and real-time segmentation efficiency (∼50fps).
-
-### 2.2. Framework Overview
-
-<p align="center">
-    <img src="imgs/framework-final-min.png"/> <br />
-    <em> 
-    Figure 1: Overview of the proposed PraNet, which consists of three reverse attention 
-    modules with a parallel partial decoder connection. See § 2 in the paper for details.
-    </em>
-</p>
-
-### 2.3. Qualitative Results
-
-<p align="center">
-    <img src="imgs/qualitative_results.png"/> <br />
-    <em> 
-    Figure 2: Qualitative Results.
-    </em>
-</p>
-
-## 3. Proposed Baseline
-
-### 3.1. Training/Testing
+### 1. Training/Testing
 
 The training and testing experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with 
 a single GeForce RTX TITAN GPU of 24 GB Memory.
@@ -126,56 +44,13 @@ a single GeForce RTX TITAN GPU of 24 GB Memory.
     
     + Just enjoy it!
 
-### 3.2 Evaluating your trained model:
+### 2 Evaluating your trained model:
 
 One-key evaluation is written in MATLAB code ([link](https://drive.google.com/file/d/1_h4_CjD5GKEf7B1MRuzye97H0MXf2GE9/view?usp=sharing)), 
 please follow this the instructions in `./eval/main.m` and just run it to generate the evaluation results in `./res/`.
 The complete evaluation toolbox (including data, map, eval code, and res): [link](https://drive.google.com/file/d/1qga1UJlIQdHNlt_F9TdN4lmmOH4gN7l2/view?usp=sharing). 
 
-### 3.3 Pre-computed maps: 
+### 3 Pre-computed maps: 
 They can be found in [download link](https://drive.google.com/file/d/1tW0OOxPSuhfSbMijaMPwRDPElW1qQywz/view?usp=sharing).
-
-
-## 4. Citation
-
-Please cite our paper if you find the work useful: 
-
-    @article{fan2020pra,
-    title={PraNet: Parallel Reverse Attention Network for Polyp Segmentation},
-    author={Fan, Deng-Ping and Ji, Ge-Peng and Zhou, Tao and Chen, Geng and Fu, Huazhu and Shen, Jianbing and Shao, Ling},
-    journal={MICCAI},
-    year={2020}
-    }
-
-## 5. TODO LIST
-
-> If you want to improve the usability or any piece of advice, please feel free to contact me directly ([E-mail](gepengai.ji@gmail.com)).
-
-- [ ] Support `NVIDIA APEX` training.
-
-- [ ] Support different backbones (
-VGGNet, 
-ResNet, 
-[ResNeXt](https://github.com/facebookresearch/ResNeXt),
-[iResNet](https://github.com/iduta/iresnet), 
-and 
-[ResNeSt](https://github.com/zhanghang1989/ResNeSt) 
-etc.)
-
-- [ ] Support distributed training.
-
-- [ ] Support lightweight architecture and real-time inference, like MobileNet, SqueezeNet.
-
-- [ ] Support distributed training
-
-- [ ] Add more comprehensive competitors.
-
-## 6. FAQ
-
-1. If the image cannot be loaded in the page (mostly in the domestic network situations).
-
-    [Solution Link](https://blog.csdn.net/weixin_42128813/article/details/102915578)
-
----
 
 **[⬆ back to top](#0-preface)**
