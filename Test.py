@@ -12,9 +12,9 @@ parser.add_argument('--pth_path', type=str, default='HarD-MSEG-best.pth')
 #for _data_name in ['CVC-ClinicDB']:
 for _data_name in ['CVC-300', 'CVC-ClinicDB', 'Kvasir', 'CVC-ColonDB', 'ETIS-LaribPolypDB']:
     data_path = '/work/james128333/PraNet/TestDataset/{}/'.format(_data_name)
-    save_path = './results/PraNet-H68/{}/'.format(_data_name)
+    save_path = './results/HarDMSEG/{}/'.format(_data_name)
     opt = parser.parse_args()
-    model = PraNet()
+    model = HarDMSEG()
     model.load_state_dict(torch.load(opt.pth_path))
     model.cuda()
     model.eval()
