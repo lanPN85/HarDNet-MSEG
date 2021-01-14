@@ -1,13 +1,4 @@
-# PraNet: Parallel Reverse Attention Network for Polyp Segmentation (MICCAI2020-Oral)
-
-> **Authors:** 
-> [Deng-Ping Fan](https://dpfan.net/), 
-> [Ge-Peng Ji](https://scholar.google.com/citations?user=oaxKYKUAAAAJ&hl=en), 
-> [Tao Zhou](https://taozh2017.github.io/),
-> [Geng Chen](https://www.researchgate.net/profile/Geng_Chen13), 
-> [Huazhu Fu](http://hzfu.github.io/), 
-> [Jianbing Shen](http://iitlab.bit.edu.cn/mcislab/~shenjianbing), and 
-> [Ling Shao](http://www.inceptioniai.org/).
+# HarDNet-MSEG: An Efficient Network for Polyp Segmentation
 
 ## 1. Preface
 
