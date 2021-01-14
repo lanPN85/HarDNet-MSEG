@@ -40,8 +40,11 @@ def structure_loss(pred, mask):
 
 
 def test(model):
-    # path for your TestDataSet/Kvasir
+    
+    ##### put ur data_path of TestDataSet/Kvasir here #####
     data_path = '/work/james128333/PraNet/TestDataset/Kvasir' 
+    #####                                             #####
+    
     model.eval()
     image_root = '{}/images/'.format(data_path)
     gt_root = '{}/masks/'.format(data_path)
