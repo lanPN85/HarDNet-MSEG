@@ -39,10 +39,10 @@ def structure_loss(pred, mask):
 
 
 
-def test(model):
+def test(model, path):
     
     ##### put ur data_path of TestDataSet/Kvasir here #####
-    data_path = '/work/james128333/PraNet/TestDataset/Kvasir' 
+    data_path = path
     #####                                             #####
     
     model.eval()
@@ -80,7 +80,7 @@ def test(model):
 
 
 
-def train(train_loader, model, optimizer, epoch):
+def train(train_loader, model, optimizer, epoch, test_path):
     model.train()
     # ---- multi-scale training ----
     size_rates = [0.75, 1, 1.25]
@@ -125,7 +125,7 @@ def train(train_loader, model, optimizer, epoch):
     
     best = 0
     if (epoch+1) % 1 == 0:
-        meandice = test(model)
+        meandice = test(model,test_path)
         if meandice > best:
             best = meandice
             torch.save(model.state_dict(), save_path + 'HarD-MSEG-best.pth' )
@@ -164,6 +164,9 @@ if __name__ == '__main__':
     parser.add_argument('--train_path', type=str,
                         default='/work/james128333/PraNet/TrainDataset', help='path to train dataset')
     
+    parser.add_argument('--test_path', type=str,
+                        default='/work/james128333/PraNet/TestDataset/Kvasir' , help='path to testing Kvasir dataset')
+    
     parser.add_argument('--train_save', type=str,
                         default='HarD-MSEG-best')
     
@@ -179,10 +182,12 @@ if __name__ == '__main__':
     # CalParams(lib, x)
 
     params = model.parameters()
+    
     if opt.optimizer == 'Adam':
         optimizer = torch.optim.Adam(params, opt.lr)
     else:
         optimizer = torch.optim.SGD(params, opt.lr, weight_decay = 1e-4, momentum = 0.9)
+        
     print(optimizer)
     image_root = '{}/images/'.format(opt.train_path)
     gt_root = '{}/masks/'.format(opt.train_path)
@@ -194,4 +199,4 @@ if __name__ == '__main__':
 
     for epoch in range(1, opt.epoch):
         adjust_lr(optimizer, opt.lr, epoch, 0.1, 200)
-        train(train_loader, model, optimizer, epoch)
+        train(train_loader, model, optimizer, epoch, opt.test_path)
