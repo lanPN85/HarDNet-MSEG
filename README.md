@@ -3,22 +3,14 @@
 
 ### 1. Training/Testing
 
-The training and testing experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with 
-a single GeForce RTX TITAN GPU of 24 GB Memory.
 
-> Note that our model also supports low memory GPU, which means you can lower the batch size
-
-
-1. Configuring your environment (Prerequisites):
-   
-    Note that PraNet is only tested on Ubuntu OS with the following environments. 
-    It may work on other operating systems as well but we do not guarantee that it will.
+1. Environment setting (Prerequisites):
     
-    + Creating a virtual environment in terminal: `conda create -n SINet python=3.6`.
+    + Creating a virtual environment in terminal: `conda create -n *your_env_name* python=3.6`.
     
     + Installing necessary packages: PyTorch 1.1
 
-1. Downloading necessary data:
+2. Downloading necessary data:
 
     + downloading testing dataset and move it into `./data/TestDataset/`, 
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view?usp=sharing).
@@ -31,13 +23,13 @@ a single GeForce RTX TITAN GPU of 24 GB Memory.
     
     + downloading Res2Net weights [download link (Google Drive)](https://drive.google.com/file/d/1_1N-cx1UpRQo7Ybsjno1PAg4KE1T9e5J/view?usp=sharing).
    
-1. Training Configuration:
+3. Training :
 
     + Assigning your costumed path, like `--train_save` and `--train_path` in `MyTrain.py`.
     
     + Just enjoy it!
 
-1. Testing Configuration:
+4. Testing :
 
     + After you download all the pre-trained model and testing dataset, just run `MyTest.py` to generate the final prediction map: 
     replace your trained model directory (`--pth_path`).
