@@ -32,6 +32,10 @@
 
     Just simply change the data_path in Test.py (line 16)
     
+    Here is the weight we using on the report https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing
+    
+    Download it, and run "python Test.py --pth_path 'path of the weight' "
+    
     And you can get the inference results in results/
     
 
