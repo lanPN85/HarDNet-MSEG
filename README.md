@@ -42,7 +42,7 @@
 ### 2 Evaluating your trained model:
 
 Change the image_root, gt_root in line 49, 50 in eval_Kvasir.py
-Then run the eval_Kvasir.py to get a similar result to our report for Kvasir Dataset.
+Then run the eval_Kvasir.py to get a similar result (about +0.002) to our report for Kvasir Dataset.
 
 Another one is written in MATLAB code ([link](https://drive.google.com/file/d/1_h4_CjD5GKEf7B1MRuzye97H0MXf2GE9/view?usp=sharing)).
 You can see how to run it in https://github.com/DengPingFan/PraNet#32-evaluating-your-trained-model-
