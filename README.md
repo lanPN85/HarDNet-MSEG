@@ -78,7 +78,12 @@ You can see how to run it in https://github.com/DengPingFan/PraNet#32-evaluating
 And our report is using this code to evaluate.
 
 ### 3 Acknowledgement
-A large part of the code is borrowed from PraNet(https://github.com/DengPingFan/PraNet) and Cascaded Partial Decoder(https://github.com/wuzhe71/CPD). Thanks for their wonderful works.
+
+A large part of the code is borrowed from 
+PraNet(https://github.com/DengPingFan/PraNet) 
+Cascaded Partial Decoder(https://github.com/wuzhe71/CPD). 
+
+Thanks for their wonderful works.
 
 ## Citation
 
