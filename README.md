@@ -1,5 +1,4 @@
-# HarDNet-MSEG: An Efficient Network for Polyp Segmentation
-
+# HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
 ### 1. Training/Testing
 
