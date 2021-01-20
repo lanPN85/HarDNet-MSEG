@@ -66,29 +66,29 @@
    
 - Training :
 
-    First download pretrain_weight : hardnet68.pth for HarDNet68 in https://github.com/PingoLH/Pytorch-HarDNet
+    1. First download pretrain_weight : hardnet68.pth for HarDNet68 in https://github.com/PingoLH/Pytorch-HarDNet  
     
-    And change the weight path in lib/hardnet_68.py line 203
+    2. Change the weight path in lib/hardnet_68.py line 203 for loading the pretrain_weight  
     
-    Then Just simply change the --train_path & --test_path in Train.py
+    3. Change the --train_path & --test_path in Train.py  
     
-    Final step is to run the Train.py
+    4. Final step is to run the Train.py  
 
 - Testing & inference result :
 
-    Just simply change the data_path in Test.py (line 16)
+    1. Change the data_path in Test.py (line 16) 
     
-    Here is the weight we using on the report https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing
+    2. Here is the weight we trained for Kvasir-SEG using on the report https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing   
     
-    Download it, and run "python Test.py --pth_path 'path of the weight' "
+       Download it, and run "python Test.py --pth_path "path of the weight"    
     
-    And you can get the inference results in results/
+       And you can get the inference results in results/
     
 
 ### 2 Evaluating your trained model:
 
-Change the image_root, gt_root in line 49, 50 in eval_Kvasir.py
-Then run the eval_Kvasir.py to get a similar result (about +0.002) to our report for Kvasir Dataset.
+1. Change the image_root, gt_root in line 49, 50 in eval_Kvasir.py  
+2. Run the eval_Kvasir.py to get a similar result (about +0.002) to our report for Kvasir Dataset.  
 
 Another one is written in MATLAB code ([link](https://drive.google.com/file/d/1_h4_CjD5GKEf7B1MRuzye97H0MXf2GE9/view?usp=sharing)).
 You can see how to run it in https://github.com/DengPingFan/PraNet#32-evaluating-your-trained-model-
