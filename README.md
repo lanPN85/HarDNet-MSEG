@@ -22,7 +22,10 @@
 |PraNet |0.898 |0.840| 0.885| 0.915| 0.030| 0.948| 66|
 |[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |**0.912**| **0.857**| **0.903**| **0.923** |**0.025**|**0.958** |**88**|
 
+###  Inference results of Kvasir-SEG compare with PraNet
+![](inf.png)
 
+## Installation & Usage
 ### 1. Training/Testing
 
 
