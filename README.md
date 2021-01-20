@@ -41,6 +41,11 @@
     + Then install PyTorch 1.1.
 
 2. Downloading necessary data:
+    **For Kvasir-SEG Dateset reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
+    **(Only training using Kvasir-SEG)**
+    
+    
+    **For each Dateset training including Kvasir-SEG, CVC-ColonDB, EndoScene, ETIS-Larib Polyp DB and CVC-Clinic DB from  > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)
     
     + downloading testing dataset and move it into your test_path
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view?usp=sharing).
