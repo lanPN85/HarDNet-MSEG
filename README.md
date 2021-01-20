@@ -1,5 +1,9 @@
 # HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
+> [**HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
+
+> [**HarDNet: A Low Memory Traffic Network**](https://arxiv.org/abs/1909.00948)
+
 ## Main results
 ### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) (FPS meansures on 2080Ti)
 
@@ -36,7 +40,7 @@
     + Then install PyTorch 1.1.
 
 2. Downloading necessary data:
-
+    
     + downloading testing dataset and move it into your test_path
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1o8OfBvYE6K-EpDyvzsmMPndnUMwb540R/view?usp=sharing).
     
