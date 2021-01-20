@@ -28,7 +28,7 @@
 
 ###  Inference results of Kvasir-SEG compare with PraNet
 
-<p align="center"> <img src='inf.png' align="center" height="230px"> </p>
+<p align="center"> <img src='inf.png' align="center" height="480px"> </p>
 
 ## Installation & Usage
 ### 1. Training/Testing
