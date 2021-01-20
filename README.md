@@ -27,7 +27,13 @@
 |[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |**0.912**| **0.857**| **0.903**| **0.923** |**0.025**|**0.958** |**88**|
 
 ###  Inference results of Kvasir-SEG compare with PraNet
-![](inf.png)
+<p align="center">
+    <img src="ing.png"/> <br />
+    <em> 
+    Figure 1: Overview of the proposed PraNet, which consists of three reverse attention 
+    modules with a parallel partial decoder connection. See § 2 in the paper for details.
+    </em>
+</p>
 
 ## Installation & Usage
 ### 1. Training/Testing
