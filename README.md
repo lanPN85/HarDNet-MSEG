@@ -1,7 +1,7 @@
 # HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
 ## Main results
-### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
+### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) (FPS meansures on 2080Ti)
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -10,9 +10,9 @@
 |DoubleUNet |0.733| 0.813 |0.820 |0.861 |0.840 |0.949 |7.5|
 |DeepLabv3+[ResNet50] |0.776| 0.857 |0.855 |0.891| 0.8616 |0.961 |28|
 |U-Net[ResNet34]| 0.810 |0.876| 0.862 |**0.944**| 0.860 |0.968| 35|
-|**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969 **|**86.7**|
+|**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969**|**86.7**|
 
-### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)
+### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)(FPS meansures on 2080Ti)
 
 | Models       | mDice   | mIoU  | wfm      |Sm   | MAE   | maxEm | FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
