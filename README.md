@@ -49,10 +49,10 @@
     **(Only training using Kvasir-SEG)**
     
      + downloading testing dataset and move it into your test_path
-    which can be found in this !!!
+    which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1us5iOMWVh_4LAiACM-LQa73t1pLLPJ7l/view?usp=sharing).
     
     + downloading training dataset and move it into your train_path
-    which can be found in this !!!
+    which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/17sUo2dLcwgPdO_fD4ySiS_4BVzc3wvwA/view?usp=sharing).
    
     
     **For each Dateset training including Kvasir-SEG, CVC-ColonDB, EndoScene, ETIS-Larib Polyp DB and CVC-Clinic DB from**
