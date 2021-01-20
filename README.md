@@ -5,7 +5,7 @@
 > [**HarDNet: A Low Memory Traffic Network**](https://arxiv.org/abs/1909.00948)
 
 ## Main results
-### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) (FPS meansures on 2080Ti)
+### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) ( FPS meansures on 2080Ti )
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -16,7 +16,7 @@
 |U-Net[ResNet34]| 0.810 |0.876| 0.862 |**0.944**| 0.860 |0.968| 35|
 |**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969**|**86.7**|
 
-### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)(FPS meansures on 2080Ti)
+### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)( FPS meansures on 2080Ti )
 
 | Models       | mDice   | mIoU  | wfm      |Sm   | MAE   | maxEm | FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -79,3 +79,22 @@ And our report is using this code to evaluate.
 
 ### 3 Acknowledgement
 A large part of the code is borrowed from PraNet(https://github.com/DengPingFan/PraNet) and Cascaded Partial Decoder(https://github.com/wuzhe71/CPD). Thanks for their wonderful works.
+
+## 4. Citation
+
+      @misc{huang2021hardnetmseg,
+      title={HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS}, 
+      author={Chien-Hsiang Huang and Hung-Yu Wu and Youn-Long Lin},
+      year={2021},
+      eprint={2101.07172},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+      } 
+      
+      @inproceedings{chao2019hardnet,
+      title={Hardnet: A low memory traffic network},
+      author={Chao, Ping and Kao, Chao-Yang and Ruan, Yu-Shan and Huang, Chien-Hsiang and Lin, Youn-Long},
+      booktitle={Proceedings of the IEEE International Conference on Computer Vision},
+      pages={3552--3561},
+      year={2019}
+      }
