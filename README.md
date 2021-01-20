@@ -5,6 +5,7 @@
 > [**HarDNet: A Low Memory Traffic Network**](https://arxiv.org/abs/1909.00948)
 
 ## Main results
+<p align="center"> <img src='land.png' align="center" height="600px"> </p>
 ### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) ( FPS meansures on 2080Ti )
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
@@ -28,7 +29,7 @@
 
 ###  Inference results of Kvasir-SEG compare with PraNet
 
-<p align="center"> <img src='inf.png' align="center" height="480px"> </p>
+<p align="center"> <img src='inf.png' align="center" height="600px"> </p>
 
 ## Installation & Usage
 ### 1. Training/Testing
