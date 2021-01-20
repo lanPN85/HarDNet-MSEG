@@ -85,7 +85,7 @@
        And you can get the inference results in results/
     
 
-### 2 Evaluating your trained model:
+### 2. Evaluating your trained model:
 
 1. Change the image_root, gt_root in line 49, 50 in eval_Kvasir.py  
 2. Run the eval_Kvasir.py to get a similar result (about +0.002) to our report for Kvasir Dataset.  
