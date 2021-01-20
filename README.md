@@ -10,7 +10,7 @@
 |DoubleUNet |0.733| 0.813 |0.820 |0.861 |0.840 |0.949 |7.5|
 |DeepLabv3+[ResNet50] |0.776| 0.857 |0.855 |0.891| 0.8616 |0.961 |28|
 |U-Net[ResNet34]| 0.810 |0.876| 0.862 |0.944| 0.860 |0.968| 35|
-|>[**HarDNet-MSEG**] (https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |0.848   |  0.904| 0.915| 0.907| 0.923| 0.969 |86.7|
+|>[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |0.848   |  0.904| 0.915| 0.907| 0.923| 0.969 |86.7|
 
 
 ### 1. Training/Testing
