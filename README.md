@@ -46,7 +46,7 @@
 
     **For Kvasir-SEG Dateset reference from**
     [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
-    **(Only training using Kvasir-SEG)**
+    **(Only training using Kvasir-SEG, 880 images for training 120 images for testing)**
     
      + downloading testing dataset and move it into your test_path
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1us5iOMWVh_4LAiACM-LQa73t1pLLPJ7l/view?usp=sharing).
