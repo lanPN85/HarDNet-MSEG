@@ -80,7 +80,7 @@ And our report is using this code to evaluate.
 ### 3 Acknowledgement
 A large part of the code is borrowed from PraNet(https://github.com/DengPingFan/PraNet) and Cascaded Partial Decoder(https://github.com/wuzhe71/CPD). Thanks for their wonderful works.
 
-## 4. Citation
+## Citation
 
       @misc{huang2021hardnetmseg,
       title={HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS}, 
