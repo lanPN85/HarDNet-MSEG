@@ -142,19 +142,6 @@ class HarDMSEG(nn.Module):
     def forward(self, x):
         #print("input",x.size())
         
-        '''
-        x = self.resnet.conv1(x)
-        x = self.resnet.bn1(x)
-        x = self.resnet.relu(x)
-        x = self.resnet.maxpool(x)      # bs, 64, 88, 88
-        # ---- low-level features ----
-        x1 = self.resnet.layer1(x)      # bs, 256, 88, 88
-        x2 = self.resnet.layer2(x1)     # bs, 512, 44, 44
-
-        x3 = self.resnet.layer3(x2)     # bs, 1024, 22, 22
-        x4 = self.resnet.layer4(x3)     # bs, 2048, 11, 11
-        '''
-        
         hardnetout = self.hardnet(x)
         
         x1 = hardnetout[0]
@@ -162,70 +149,14 @@ class HarDMSEG(nn.Module):
         x3 = hardnetout[2]
         x4 = hardnetout[3]
         
-        #print("haha")
-        #print(x1.size())
-        #print(x2.size())
-        #print(x3.size())
-        #print(x4.size())
-        #print("RFB start")
-        
-        
         x2_rfb = self.rfb2_1(x2)        # channel -> 32
         x3_rfb = self.rfb3_1(x3)        # channel -> 32
         x4_rfb = self.rfb4_1(x4)        # channel -> 32
-        #x2_rfb = F.relu(self.conv2(x2))
-        #x3_rfb = F.relu(self.conv3(x3))
-        #x4_rfb = F.relu(self.conv4(x4))
         
         ra5_feat = self.agg1(x4_rfb, x3_rfb, x2_rfb)
-        #ra5_feat = self.upsample(x4)
-        #ra5_feat = self.conv5(ra5_feat)
-        #ra5_feat = self.conv6(ra5_feat)
         
         lateral_map_5 = F.interpolate(ra5_feat, scale_factor=8, mode='bilinear')    # NOTES: Sup-1 (bs, 1, 44, 44) -> (bs, 1, 352, 352)
-        '''
-        #print("x4 start")
-        # ---- reverse attention branch_4 ----
-        crop_4 = F.interpolate(ra5_feat, scale_factor=0.25, mode='bilinear')
-        x = -1*(torch.sigmoid(crop_4)) + 1
-        x = x.expand(-1, 1024, -1, -1).mul(x4)
-        x = self.ra4_conv1(x)
-        x = F.relu(self.ra4_conv2(x))
-        x = F.relu(self.ra4_conv3(x))
-        x = F.relu(self.ra4_conv4(x))
-        ra4_feat = self.ra4_conv5(x)
-        
-        x = ra4_feat + crop_4
-        #z4 = BasicConv2d(1024, 1, kernel_size=1)
-        #print((z4(x4)).shape)
-        lateral_map_4 = F.interpolate(x, scale_factor=32, mode='bilinear')  # NOTES: Sup-2 (bs, 1, 11, 11) -> (bs, 1, 352, 352)
 
-        #print("x4 over")
-        #print("x3 start")
-        # ---- reverse attention branch_3 ----
-        crop_3 = F.interpolate(x, scale_factor=2, mode='bilinear')
-        x = -1*(torch.sigmoid(crop_3)) + 1
-        x = x.expand(-1, 640, -1, -1).mul(x3)
-        x = self.ra3_conv1(x)
-        x = F.relu(self.ra3_conv2(x))
-        x = F.relu(self.ra3_conv3(x))
-        ra3_feat = self.ra3_conv4(x)
-        x = ra3_feat + crop_3
-        lateral_map_3 = F.interpolate(x, scale_factor=16, mode='bilinear')  # NOTES: Sup-3 (bs, 1, 22, 22) -> (bs, 1, 352, 352)
-
-        #print("x3 over")
-        # ---- reverse attention branch_2 ----
-        crop_2 = F.interpolate(x, scale_factor=2, mode='bilinear')
-        x = -1*(torch.sigmoid(crop_2)) + 1
-        x = x.expand(-1, 320, -1, -1).mul(x2)
-        x = self.ra2_conv1(x)
-        x = F.relu(self.ra2_conv2(x))
-        x = F.relu(self.ra2_conv3(x))
-        ra2_feat = self.ra2_conv4(x)
-        x = ra2_feat + crop_2
-        lateral_map_2 = F.interpolate(x, scale_factor=8, mode='bilinear')   # NOTES: Sup-4 (bs, 1, 44, 44) -> (bs, 1, 352, 352)
-        '''
-        #print("x2 over")
         return lateral_map_5 #, lateral_map_4, lateral_map_3, lateral_map_2
 
 if __name__ == '__main__':
