@@ -9,8 +9,8 @@
 |ResUNet |0.572| 0.690 |0.699 |0.745| 0.725| 0.917| 15|
 |DoubleUNet |0.733| 0.813 |0.820 |0.861 |0.840 |0.949 |7.5|
 |DeepLabv3+[ResNet50] |0.776| 0.857 |0.855 |0.891| 0.8616 |0.961 |28|
-|U-Net[ResNet34]| 0.810 |0.876| 0.862 |0.944| 0.860 |0.968| 35|
-|**HarDNet-MSEG** |**0.848   |  0.904| 0.915| 0.907| 0.923| 0.969 |86.7|
+|U-Net[ResNet34]| 0.810 |0.876| 0.862 |**0.944**| 0.860 |0.968| 35|
+|**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969 **|**86.7**|
 
 ### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)
 
@@ -20,7 +20,7 @@
 |U-Net++ |0.821 |0.743 |0.808 |0.862 |0.048 |0.910| 25|
 |SFA |0.723| 0.611| 0.67| 0.782 |0.075 |0.849| 40|
 |PraNet |0.898 |0.840| 0.885| 0.915| 0.030| 0.948| 66|
-|[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |**0.912| 0.857| 0.903| 0.923 |0.02|5 0.958 |88|
+|[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |**0.912**| **0.857**| **0.903**| **0.923** |**0.025**|**0.958** |**88**|
 
 
 ### 1. Training/Testing
