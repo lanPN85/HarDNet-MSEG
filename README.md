@@ -1,5 +1,13 @@
 # HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
+## Main results
+### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
+
+| Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
+| :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
+|U-Net         | 0.471  | 0.597  | 0.598         |0.672       | 0.617| 0.894| 11|
+
+
 ### 1. Training/Testing
 
 
