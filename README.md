@@ -96,9 +96,9 @@ And our report is using this code to evaluate.
 
 ### 3 Acknowledgement
 
-A large part of the code is borrowed from 
-PraNet(https://github.com/DengPingFan/PraNet) 
-Cascaded Partial Decoder(https://github.com/wuzhe71/CPD). 
+A large part of the code is borrowed from  
+PraNet(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)      
+Cascaded Partial Decoder(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)  
 
 Thanks for their wonderful works.
 
