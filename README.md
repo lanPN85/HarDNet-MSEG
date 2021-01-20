@@ -36,13 +36,13 @@
 ### 1. Training/Testing
 
 
-1. Environment setting (Prerequisites):
+#### 1. Environment setting (Prerequisites):
     
     + `conda create -n *your_env_name* python=3.6`.
     
     + Then install PyTorch 1.1.
 
-2. Downloading necessary data:
+#### 2. Downloading necessary data:
 
     **For Kvasir-SEG Dateset reference from**
     [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
@@ -64,7 +64,7 @@
     + downloading training dataset and move it into your train_path
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/1lODorfB33jbd-im-qrtUgWnZXxB94F55/view?usp=sharing).
    
-3. Training :
+#### 3. Training :
 
     First download pretrain_weight : hardnet68.pth for HarDNet68 in https://github.com/PingoLH/Pytorch-HarDNet
     
@@ -74,7 +74,7 @@
     
     Final step is to run the Train.py
 
-4. Testing & inference result :
+#### 4. Testing & inference result :
 
     Just simply change the data_path in Test.py (line 16)
     
