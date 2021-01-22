@@ -103,7 +103,7 @@ A large part of the code is borrowed from
 Thanks for their wonderful works.
 
 ## Citation
-Please cite our paper if you find the work useful
+If you find this project useful for your research, please use the following BibTeX entry.
 
       @misc{huang2021hardnetmseg,
       title={HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS}, 
