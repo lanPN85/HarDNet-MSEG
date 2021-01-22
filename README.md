@@ -7,7 +7,7 @@
 ## Main results
 <p align="center"> <img src='lands.png' align="center" height="400px"> </p>
 
-### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) ( FPS meansures on 2080Ti )
+### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) ( FPS measures on 2080Ti )
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -18,7 +18,7 @@
 |U-Net[ResNet34]| 0.810 |0.876| 0.862 |**0.944**| 0.860 |0.968| 35|
 |**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969**|**86.7**|
 
-### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)( FPS meansures on 2080Ti )
+### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)( FPS measures on 2080Ti )
 
 | Models       | mDice   | mIoU  | wfm      |Sm   | MAE   | maxEm | FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -44,7 +44,7 @@
 
 - Downloading necessary data:
 
-    **For Kvasir-SEG Dateset reference from**
+    **For Kvasir-SEG Dataset reference from**
     [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)
     **(Only training using Kvasir-SEG, 880 images for training 120 images for testing)**
     
@@ -55,7 +55,7 @@
     which can be found in this [download link (Google Drive)](https://drive.google.com/file/d/17sUo2dLcwgPdO_fD4ySiS_4BVzc3wvwA/view?usp=sharing).
    
     
-    **For each Dateset training including Kvasir-SEG, CVC-ColonDB, EndoScene, ETIS-Larib Polyp DB and CVC-Clinic DB from**
+    **For each Dataset training including Kvasir-SEG, CVC-ColonDB, EndoScene, ETIS-Larib Polyp DB and CVC-Clinic DB from**
     [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)
     
     + downloading testing dataset and move it into your test_path
@@ -94,7 +94,7 @@ Another one is written in MATLAB code ([link](https://drive.google.com/file/d/1_
 You can see how to run it in https://github.com/DengPingFan/PraNet#32-evaluating-your-trained-model-
 And our report is using this code to evaluate.
 
-### 3 Acknowledgement
+### 3. Acknowledgement
 
 A large part of the code is borrowed from  
 **PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)      
