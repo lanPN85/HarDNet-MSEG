@@ -125,11 +125,9 @@ And our report is using this code to evaluate.
 
 ### 3. Acknowledgement
 
-- A large part of the code is borrowed from   
-
+- A large part of the code is borrowed from     
 **PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)        
 **Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)    
-
 Thanks for their wonderful works.  
 
 - This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.   
