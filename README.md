@@ -5,6 +5,7 @@
 > [**HarDNet: A Low Memory Traffic Network**](https://arxiv.org/abs/1909.00948)
 
 ## Link for HarDNet family
+### Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) 
 ### Object Detection : [CenterNet-HarDNet](https://github.com/PingoLH/CenterNet-HarDNet) 44.3 mAP / 45 fps on COCO Dataset
 ### Semantic Segmentation : [FC-HarDNet](https://github.com/PingoLH/FCHarDNet) Testing set 76.0 mIoU / 53 fps on Cityscapes Dataset
 
