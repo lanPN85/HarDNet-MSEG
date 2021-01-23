@@ -44,17 +44,16 @@
 - A Simple Encoder-Decoder architecture
 
 - Encoder Part : Using HarDNet68 as backbone
-    
-    + Improved the original dense block of Densenet. 
-    
-    + Considering the impact of memory traffic on model design.
-    
-    + Faster and more accurate than ResNet & DenseNet
+<p align="center"> <img src='blk.png' align="center" height="400px"> </p> 
+
+    + k = growth rate (as in DenseNet)
+    + m = channel weighting factor (1.6~1.7)
+    + Conv3x3 for all layers (no bottleneck layer)
+    + No global dense connection (input of a HarDBlk is NOT reused as a part of output)
 
 - Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
     
     + Using RFB Block for increasing the receptive field and strengthening the features.
-    
     + Dense aggregation for fusing the features.
 
 ## Installation & Usage
@@ -121,14 +120,16 @@ And our report is using this code to evaluate.
 
 ### 3. Acknowledgement
 
-- A large part of the code is borrowed from
-**PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)      
-**Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)  
+- A large part of the code is borrowed from 
+**PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)        
+**Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)    
 Thanks for their wonderful works.  
 
-- This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.  
-We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources. Without it this research is impossible.   
+- This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.   
+We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources.   
 We would also like to thank Mr.Ping Chao for many fruitful discussions.
+
+
 
 ## Citation
 If you find this project useful for your research, please use the following BibTeX entry.
