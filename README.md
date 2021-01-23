@@ -121,11 +121,14 @@ And our report is using this code to evaluate.
 
 ### 3. Acknowledgement
 
-A large part of the code is borrowed from  
+- A large part of the code is borrowed from
 **PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)      
 **Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)  
+Thanks for their wonderful works.  
 
-Thanks for their wonderful works.
+- This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.  
+We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources. Without it this research is impossible.   
+We would also like to thank Mr.Ping Chao for many fruitful discussions.
 
 ## Citation
 If you find this project useful for your research, please use the following BibTeX entry.
@@ -147,8 +150,3 @@ If you find this project useful for your research, please use the following BibT
       year={2019}
       }
       
-## Acknowledgements
-This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.  
-We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources.   
-Without it this research is impossible.   
-We would also like to thank Mr.Ping Chao for many fruitful discussions.
