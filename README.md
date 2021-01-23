@@ -44,18 +44,23 @@
 - A Simple Encoder-Decoder architecture
 
 - Encoder Part : Using HarDNet68 as backbone
+
 <p align="center"> <img src='blk.png' align="center" height="100px"> </p> 
+
 ```
     + k = growth rate (as in DenseNet)
     + m = channel weighting factor (1.6~1.7)
     + Conv3x3 for all layers (no bottleneck layer)
     + No global dense connection (input of a HarDBlk is NOT reused as a part of output)
 ```
+
 - Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
+
 ```
     + Using RFB Block for increasing the receptive field and strengthening the features.
     + Dense aggregation for fusing the features.
 ```
+
 ## Installation & Usage
 ### 1. Training/Testing
 
