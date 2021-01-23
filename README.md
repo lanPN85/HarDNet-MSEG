@@ -38,9 +38,12 @@
 <p align="center"> <img src='inf.png' align="center" height="600px"> </p>
 
 ## Architecture
-<p align="center"> <img src='mseg.png' align="center" height="600px"> </p> 
+<p align="center"> <img src='mseg.png' align="center" height="400px"> </p> 
+
 - A Simple Encoder-Decoder architecture
+
 - Encoder Part : Using HarDNet68 as backbone
+
 - Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
 
 ## Installation & Usage
