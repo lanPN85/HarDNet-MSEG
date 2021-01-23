@@ -8,6 +8,7 @@
 ### Object Detection : [CenterNet-HarDNet](https://github.com/PingoLH/CenterNet-HarDNet) 44.3 mAP / 45 fps on COCO Dataset
 ### Semantic Segmentation : [FC-HarDNet](https://github.com/PingoLH/FCHarDNet) Testing set 76.0 mIoU / 53 fps on Cityscapes Dataset
 
+
 ## Main results
 <p align="center"> <img src='lands.png' align="center" height="400px"> </p>
 
@@ -35,6 +36,12 @@
 ###  Inference results of Kvasir-SEG compare with PraNet
 
 <p align="center"> <img src='inf.png' align="center" height="600px"> </p>
+
+## Architecture
+<p align="center"> <img src='mseg.png' align="center" height="600px"> </p> 
+- A Simple Encoder-Decoder architecture
+- Encoder Part : Using HarDNet68 as backbone
+- Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
 
 ## Installation & Usage
 ### 1. Training/Testing
@@ -125,3 +132,9 @@ If you find this project useful for your research, please use the following BibT
       pages={3552--3561},
       year={2019}
       }
+      
+## Acknowledgements
+This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.  
+We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources.   
+Without it this research is impossible.   
+We would also like to thank Mr.Ping Chao for many fruitful discussions.
