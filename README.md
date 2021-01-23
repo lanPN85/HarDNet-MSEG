@@ -130,9 +130,9 @@ And our report is using this code to evaluate.
 **Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)    
 Thanks for their wonderful works.  
 
-- This research is supported in part by a grant from the Ministry of Science and Technology (MOST) of Taiwan.   
-We thank National Center for High-performance Computing (NCHC) for providing computational and storage resources.   
-We would also like to thank Mr.Ping Chao for many fruitful discussions.
+- This research is supported in part by a grant from the **Ministry of Science and Technology (MOST) of Taiwan**.   
+We thank **National Center for High-performance Computing (NCHC)** for providing computational and storage resources.
+We would also like to thank **[Mr.Ping Chao](https://github.com/PingoLH)** for many fruitful discussions.
 
 
 
