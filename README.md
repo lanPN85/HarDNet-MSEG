@@ -43,8 +43,18 @@
 - A Simple Encoder-Decoder architecture
 
 - Encoder Part : Using HarDNet68 as backbone
+    
+    + Improved the original dense block of Densenet. 
+    
+    + Considering the impact of memory traffic on model design.
+    
+    + Faster and more accurate than ResNet & DenseNet
 
 - Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
+    
+    + Using RFB Block for increasing the receptive field and strengthening the features.
+    
+    + Dense aggregation for fusing the features.
 
 ## Installation & Usage
 ### 1. Training/Testing
