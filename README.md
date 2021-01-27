@@ -1,19 +1,19 @@
 # HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
-> [**HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
+> [**Arxiv Paper : HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
 
-> [**HarDNet: A Low Memory Traffic Network**](https://arxiv.org/abs/1909.00948)
+> [**ICCV 2019 Paper : HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948)
 
-## Link for HarDNet family
-#### Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) A Low Memory Traffic Network (ICCV 2019 paper)
-#### Object Detection : [CenterNet-HarDNet](https://github.com/PingoLH/CenterNet-HarDNet) 44.3 mAP / 45 fps on COCO Dataset
-#### Semantic Segmentation : [FC-HarDNet](https://github.com/PingoLH/FCHarDNet)  76.0 mIoU / 53 fps on Cityscapes Dataset
+## HarDNet Family
+#### For Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) A Low Memory Traffic Network
+#### For Object Detection : [CenterNet-HarDNet](https://github.com/PingoLH/CenterNet-HarDNet) 44.3 mAP / 45 fps on COCO Dataset
+#### For Semantic Segmentation : [FC-HarDNet](https://github.com/PingoLH/FCHarDNet)  76.0 mIoU / 53 fps on Cityscapes Dataset
 
 
 ## Main results
 <p align="center"> <img src='lands.png' align="center" height="400px"> </p>
 
-### Performance on Kvasir-SEG reference from > [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631) ( FPS measures on 2080Ti )
+### Performance on Kvasir-SEG Dataset( Data split according to [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)) ( FPS measures on 2080Ti )
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
