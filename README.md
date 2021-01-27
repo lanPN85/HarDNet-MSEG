@@ -2,7 +2,7 @@
 
 > Arxiv Paper : [**HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
 
-> ICCV 2019 Paper : [**HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948)
+> ICCV 2019 Paper : [**HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948
 
 ## HarDNet Family
 #### For Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) A Low Memory Traffic Network
@@ -15,7 +15,7 @@
 
 ### Performance on Kvasir-SEG Dataset  
 (Training/Testing split = 880/120 according to [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)) 
-( FPS measures on 2080Ti )
+(FPS measures on 2080Ti)
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -27,7 +27,7 @@
 |**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969**|**86.7**|
 
 ### Performance on Kvasir-SEG Dataset
-(Training/Testing split = 1450 from 5 datasets /100 from Kvasir-SEG according to [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392))( FPS measures on 2080Ti )
+(Training/Testing split = 1450 from 5 datasets /100 from Kvasir-SEG according to [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)) (FPS measures on 2080Ti)
 
 | Models       | mDice   | mIoU  | wfm      |Sm   | MAE   | maxEm | FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -129,8 +129,8 @@ And our report is using this code to evaluate.
 ### 3. Acknowledgement
 
 - A large part of the code is borrowed from     
-**PraNet**(https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)        
-**Cascaded Partial Decoder**(https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)    
+**PraNet** (https://github.com/DengPingFan/PraNet) (https://arxiv.org/abs/2006.11392)        
+**Cascaded Partial Decoder** (https://github.com/wuzhe71/CPD) (https://arxiv.org/abs/1904.08739)    
 Thanks for their wonderful works.  
 
 - This research is supported in part by a grant from the **Ministry of Science and Technology (MOST) of Taiwan**.   
