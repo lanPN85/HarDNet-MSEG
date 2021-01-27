@@ -2,7 +2,7 @@
 
 > Arxiv Paper : [**HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
 
-> ICCV 2019 Paper : [**HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948
+> ICCV 2019 Paper : [**HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948)
 
 ## HarDNet Family
 #### For Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) A Low Memory Traffic Network
