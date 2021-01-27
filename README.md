@@ -1,8 +1,8 @@
 # HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS
 
-> [**Arxiv Paper : HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
+> Arxiv Paper : [**HarDNet-MSEG: A Simple Encoder-Decoder Polyp Segmentation Neural Network that Achieves over 0.9 Mean Dice and 86 FPS**](https://arxiv.org/abs/2101.07172)
 
-> [**ICCV 2019 Paper : HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948)
+> ICCV 2019 Paper : [**HarDNet: A Low Memory Traffic Network)**](https://arxiv.org/abs/1909.00948)
 
 ## HarDNet Family
 #### For Image Classification : [HarDNet](https://github.com/PingoLH/Pytorch-HarDNet) A Low Memory Traffic Network
@@ -13,7 +13,9 @@
 ## Main results
 <p align="center"> <img src='lands.png' align="center" height="400px"> </p>
 
-### Performance on Kvasir-SEG Dataset( Data split according to [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)) ( FPS measures on 2080Ti )
+### Performance on Kvasir-SEG Dataset  
+(Training/Testing split = 880/120 according to [**Real-Time Polyp Detection, Localisation and Segmentation in Colonoscopy Using Deep Learning**](https://arxiv.org/abs/2011.07631)) 
+( FPS measures on 2080Ti )
 
 | Models       | mIoU   | mDice  | F2-score      |Precision   | Recall   | Overall Acc.| FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -24,7 +26,8 @@
 |U-Net[ResNet34]| 0.810 |0.876| 0.862 |**0.944**| 0.860 |0.968| 35|
 |**HarDNet-MSEG** |**0.848**   |  **0.904**| **0.915**| 0.907| **0.923**| **0.969**|**86.7**|
 
-### Performance on Kvasir-SEG reference from another training split > [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392)( FPS measures on 2080Ti )
+### Performance on Kvasir-SEG Dataset
+(Training/Testing split = 1450 from 5 datasets /100 from Kvasir-SEG according to [**PraNet: Parallel Reverse Attention Network for Polyp Segmentation**](https://arxiv.org/abs/2006.11392))( FPS measures on 2080Ti )
 
 | Models       | mDice   | mIoU  | wfm      |Sm   | MAE   | maxEm | FPS|
 | :----------: | :----: | :----: | :-----------: | :--------: | :------------: | :---------------: |:--------------: | 
@@ -34,11 +37,11 @@
 |PraNet |0.898 |0.840| 0.885| 0.915| 0.030| 0.948| 66|
 |[**HarDNet-MSEG**](https://drive.google.com/file/d/1nj-zv64RiWwYjCmWg4NME7HNf_nBncUu/view?usp=sharing) |**0.912**| **0.857**| **0.903**| **0.923** |**0.025**|**0.958** |**88**|
 
-###  Inference results of Kvasir-SEG compare with PraNet
+###  Sample Inference Results of Kvasir-SEG Dataset comparing with PraNet
 
 <p align="center"> <img src='inf.png' align="center" height="600px"> </p>
 
-## Architecture
+## HarDNet-MSEG Architecture
 <p align="center"> <img src='mseg.png' align="center" height="400px"> </p> 
 
 - A Simple Encoder-Decoder architecture
@@ -54,7 +57,7 @@
     + No global dense connection (input of a HarDBlk is NOT reused as a part of output)
 ```
 
-- Decoder Part : Refer to [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
+- Decoder Part : Adopted from [Cascaded Partial Decoder](https://github.com/wuzhe71/CPD)
 
 ```
     + Using RFB Block for increasing the receptive field and strengthening the features.
@@ -114,7 +117,7 @@
        And you can get the inference results in results/
     
 
-### 2. Evaluating your trained model:
+### Evaluation :
 
 1. Change the image_root, gt_root in line 49, 50 in eval_Kvasir.py  
 2. Run the eval_Kvasir.py to get a similar result (about +0.002) to our report for Kvasir Dataset.  
