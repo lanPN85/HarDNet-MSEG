@@ -107,17 +107,12 @@ def train(train_loader, model, optimizer, epoch, test_path):
                   ' lateral-5: {:0.4f}]'.
                   format(datetime.now(), epoch, opt.epoch, i, total_step,
                           loss_record5.show()))
-    save_path = 'snapshots/{}/'.format(opt.train_save)
+    save_path = opt.train_save
     os.makedirs(save_path, exist_ok=True)
+    save_path = os.path.join(save_path, 'HarD-MSEG.pth')
+    print('[Saving Snapshot:]', save_path)
+    torch.save(model.state_dict(), save_path)
     
-    best = 0
-    if (epoch+1) % 1 == 0:
-        meandice = test(model,test_path)
-        if meandice > best:
-            best = meandice
-            torch.save(model.state_dict(), save_path + 'HarD-MSEG-best.pth' )
-            print('[Saving Snapshot:]', save_path + 'HarD-MSEG-best.pth',meandice)
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     
