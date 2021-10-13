@@ -117,7 +117,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     
     parser.add_argument('--epoch', type=int,
-                        default=100, help='epoch number')
+                        default=50, help='epoch number')
     
     parser.add_argument('--lr', type=float,
                         default=1e-4, help='learning rate')
