@@ -201,7 +201,7 @@ def hardnet(arch=68,pretrained=True, **kwargs):
         print("68 LOADED")
         model = HarDNet(arch=68)
         if pretrained:
-            weights = model_zoo.load_url("http://www.lanpn.me:8080/hardnet68-0000.pth")
+            weights = model_zoo.load_url("http://www.lanpn.me:8080/hardnet68-5d684880af4f797b66a43c1f29106e9867293124580b772be5cc32ac8500c93f.pth")
             model.load_state_dict(weights)
             print("68 LOADED READY")
     #elif arch == 85:
