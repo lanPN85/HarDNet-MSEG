@@ -117,7 +117,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     
     parser.add_argument('--epoch', type=int,
-                        default=50, help='epoch number')
+                        default=20, help='epoch number')
     
     parser.add_argument('--lr', type=float,
                         default=1e-4, help='learning rate')
@@ -126,7 +126,7 @@ if __name__ == '__main__':
                         default='Adam', help='choosing optimizer Adam or SGD')
     
     parser.add_argument('--augmentation',
-                        default=False, help='choose to do random flip rotation')
+                        default=True, help='choose to do random flip rotation')
     
     parser.add_argument('--batchsize', type=int,
                         default=16, help='training batch size')
@@ -141,7 +141,7 @@ if __name__ == '__main__':
                         default=0.1, help='decay rate of learning rate')
     
     parser.add_argument('--decay_epoch', type=int,
-                        default=50, help='every n epochs decay learning rate')
+                        default=10, help='every n epochs decay learning rate')
     
     parser.add_argument('--train_path', type=str,
                         default='/work/james128333/PraNet/TrainDataset', help='path to train dataset')
