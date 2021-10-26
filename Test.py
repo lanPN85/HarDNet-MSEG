@@ -39,6 +39,6 @@ for i in range(test_loader.size):
     if not opt.soft:
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
     else:
-        res = (res * 255).to(torch.int)
+        res = (res * 255).astype(np.int)
 
     imageio.imwrite(os.path.join(save_path, name), res)
