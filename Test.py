@@ -36,7 +36,7 @@ for i in range(test_loader.size):
     res = model(image)
     res = F.upsample(res, size=gt.shape, mode='bilinear', align_corners=False)
     res = res.sigmoid().data.cpu().numpy().squeeze()
-    if not args.soft:
+    if not opt.soft:
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
     else:
         res = (res * 255).to(torch.int)
